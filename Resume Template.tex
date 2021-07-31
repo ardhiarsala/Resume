@@ -1,0 +1,193 @@
+%-------------------------
+% Author : Ardhi Arsala Rahmani
+% Originally created by : Jake Gutierrez based on https://github.com/sb2nov/resume 
+% License : MIT
+%------------------------
+
+\documentclass[A4,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\usepackage[T1]{fontenc}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-.4in}
+\addtolength{\evensidemargin}{-.4in}
+\addtolength{\textwidth}{.90in}
+\addtolength{\topmargin}{-0.4in}
+\addtolength{\textheight}{.90in}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{1pt}\sc\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule\vspace{-1pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+%Subheading with five fields
+\newcommand{\resumeSubheadingA}[5]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textup{#3} & \textit{\small #4} \\
+      \textup{\small #5}
+    \end{tabular*}\vspace{-1pt}
+}
+
+%Subheading with three fields
+\newcommand{\resumeSubheadingB}[3]{
+	\vspace{-2pt}\item
+	\begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & \textbf{\small #2} \\
+		\textup{#3}
+	\end{tabular*}\vspace{-3pt}
+}
+
+%Subheading with two fields
+\newcommand{\resumeSubheadingC}[2]{
+	\vspace{-2pt}\item
+	\begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & \textup{\small #2} \\
+	\end{tabular*}\vspace{-15pt}
+}
+
+%Two field tabbed items for use in skills section
+\newcommand{\Skillitem}[2]{
+	\vspace{-2pt}\item
+	\begin{tabular*}{\linewidth}[t]{p{5.9cm}c c}
+		\textbf{#1} & \textup{#2} \\
+	\end{tabular*}\vspace{-15pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
+      \textup{#1} & \textup{#2} \\
+    \end{tabular*}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-1pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}\vspace{-5pt}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    {\Huge \scshape First Name Last Name} \\ \vspace{10pt}
+    \small \raisebox{-0.1\height}\faPhone\ +XX XXX XXXX XXXX ~ \href{mailto:youremail@mail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{youremail@mail.com}} ~ 
+    \href{https://linkedin.com/in//}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/}}  ~
+    \vspace{1pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheadingB
+	{University A}{2000 -- 2004}
+	{PhD in A Studies}{}
+    \resumeSubheadingA
+    {University B}{1998 -- 2000}
+    {MA in B Studies}{}
+    {Honor(s): Cum Laude}
+    \resumeSubheadingA
+    {University C}{1995 -- 1998}
+	{BA in C Studies}{}
+	{Honor(s): Cum Laude}
+\resumeSubHeadingListEnd
+
+%-----------WORK EXPERIENCE-----------
+\section{Work Experience}
+\resumeSubHeadingListStart
+	\resumeSubheadingB
+	{Work 1}{2010 -- 2015}
+	{Position 1}
+	\resumeSubheadingB
+	{Work 2}{2005 -- 2010}
+	{Position 2}
+\resumeSubHeadingListEnd
+
+%-----------AWARDS & SCHOLARSHIPS-----------
+\section{Award \& Scholarships}
+\resumeSubHeadingListStart
+	\resumeSubheadingB
+	{Award A}{2005}
+	{Institution A}
+	\resumeSubheadingB
+	{Award B}{2010}
+	{Institution B}
+\resumeSubHeadingListEnd
+
+%-----------LINGUISTIC SKILLS-----------
+\section{Linguistic Skills}
+\resumeSubHeadingListStart
+	\Skillitem
+	{Language A}{: Native Proficiency}
+	\Skillitem
+	{Language B}{: Bilingual Proficiency}
+	\Skillitem
+	{Language C}{: Elementary Proficiency}
+\resumeSubHeadingListEnd
+
+%---------TECHNICAL SKILLS----add \vspace{0pt} for every new skills section because why not
+\vspace{0pt}\section{Technical Skills}
+\resumeSubHeadingListStart
+	\Skillitem
+	{Skill 1}{: A, B, C}
+	\Skillitem
+	{Skill 2}{: A, B, C}
+\resumeSubHeadingListEnd
+                                                      
+\end{document}
