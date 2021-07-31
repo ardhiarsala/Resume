@@ -6,4 +6,3 @@ This is an A4-sized single-columned curriculum vitae/résumé using base LaTeX f
 
 The five sections included in this template are education, work experience, awards & scholarships, linguistic skills, and technical skills. There are options for subsections with different number of fields such as in education (see preview below).
 
-![Resume Screenshot] (/Resume Template Preview.jpg)
